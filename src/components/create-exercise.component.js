@@ -29,7 +29,6 @@ export default class CreateExercise extends Component {
         //     users: ['test user'],
         //     username: 'test user'
         // })
-
         axios.get('https://api-keys-teju.herokuapp.com/users/')
             .then(response => {
                 if (response.data.length > 0) {
@@ -76,7 +75,7 @@ export default class CreateExercise extends Component {
 
         axios.post('https://api-keys-teju.herokuapp.com/exercises/add', exercise)
             .then(res => console.log(res.data));
-        window.location = '/';
+        // window.location = '/';
     }
     render() {
         return (
